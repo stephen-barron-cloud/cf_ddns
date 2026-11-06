@@ -1,8 +1,8 @@
 # Create IOS Shortcut to get your public ip address and set a cloudflare dns entry
 I use this when traveling to:
-    1:  connect to a public wifi network
-    2.  run this shortcut to update a dns entry
-    3.  my firewall uses dns entries for source based allowed policy
+    - connect to a public wifi network
+    - Run this shortcut to update a dns entry
+    - My firewall uses dns entries for source based allowed policy
 
 It doesn't really work for mobile networks generally because of carrier grade nat and frequent IP address changes.  
 ![Shortcut](image/shortcut_button.png)
