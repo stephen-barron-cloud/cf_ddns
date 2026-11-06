@@ -7,6 +7,10 @@ I use this when traveling to:
 It doesn't really work for mobile networks generally because of carrier grade nat and frequent IP address changes.  
 ![Shortcut](image/shortcut_button.png)
 
+## Prerequisites:
+- [Generate a CF API Auth Token](https://www.stephen-barron.com/cloudflare-token-generation/)
+- 
+
 ## Step 1:
     Get Contents of https://checkip.amazonaws.com
         Method:  Get
@@ -16,11 +20,11 @@ It doesn't really work for mobile networks generally because of carrier grade na
 set Iphone_ipaddr to **Contents of URL**
 
 ## Step 3:  get contents of url
-get contents of https://api.cloudflare.com/client/v4/zones/<Cloudflare Zone ID>/dns_records/0<DNS Record ID>\
-    method:  **PATCH**
-        Headers: 
-            content-Type:  **application/json**
-            Authorization:  **Bearer <token>**
+- get contents of https://api.cloudflare.com/client/v4/zones/<Cloudflare Zone ID>/dns_records/<DNS Record ID>\
+  - method:  **PATCH**
+  - Headers: 
+    - content-Type:  **application/json**
+    - Authorization:  **Bearer <token>**
 
 ![Get Contents and Header](image/get_contents_and_header.png)
 
