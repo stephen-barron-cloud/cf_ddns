@@ -20,7 +20,7 @@ It doesn't really work for mobile networks generally because of carrier grade na
 set Iphone_ipaddr to **Contents of URL**
 
 ## Step 3:  get contents of url
-- get contents of https://api.cloudflare.com/client/v4/zones/<Cloudflare Zone ID>/dns_records/<DNS Record ID>\
+- get contents of https://api.cloudflare.com/client/v4/zones/<Cloudflare_Zone_ID>/dns_records/<DNS_Record_ID>\
   - method:  **PATCH**
   - Headers: 
     - content-Type:  **application/json**
